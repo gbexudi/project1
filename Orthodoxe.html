@@ -1,0 +1,56 @@
+
+<div class="row">
+  <h2>Θρησκευτικοί χώροι - Ορθόδοξοι Ναοί</h2>
+  <div class="column">
+    <div class="card">
+	  <img src="./images/church.png">  
+		<h3>Παναγία Ελευθερώτρια</h3>
+		<p>Εισαγωγικό κείμενο ......</p>
+		<button class='showInfo' file="./panagiaEl.html">Περισσότερα</button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+	  <img src="./images/church.png">
+      <h3>Άγιος Αθανάσιος</h3>
+	  <p>Εισαγωγικό κείμενο ......</p>
+	  <button class='showInfo' file="./AgiosAthanasios.html">Περισσότερα</button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+	  <img src="./images/church.png">
+      <h3>Κοιμήσεως της Θεοτόκου</h3>
+	  <p>Εισαγωγικό κείμενο ......</p>
+	  <button class='showInfo' file="./KoimisiTheotokou.html">Περισσότερα</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+	  <img src="./images/church.png">
+      <h3>Σωτήρος Χριστού</h3>
+	  <p>Εισαγωγικό κείμενο ......</p>
+	  <button class='showInfo' file="./Xristos.html">Περισσότερα</button>
+    </div>
+  </div>
+</div>
+<br>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // select all the links with target="#main"
+	 var $trig = $('.showInfo');		
+	
+	$trig.click(function() {
+		var url = $(this).attr('file');
+		//var targ = $(this).attr('target');
+		//console.log(url);
+		// console.log(targ);
+		$('.row').load(url);
+		return false;
+  });
+ });
+</script>
+
